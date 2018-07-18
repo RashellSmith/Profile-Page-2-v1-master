@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width= device-width, initial-scale=1">
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+  </style>
+  <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link type="text/css" rel="stylesheet" href="css/rocket.css" />
+  <title>Student Name</title>
+</head>
+
+<body>
+
+  <div id="rocketBody">
+    <div id="message"> Get ready! To launch into the unviverse of Web Design and Developement !</div>
+    <div class="left" id="countdown"> 10</div>
+    <div id="rocket"></div>
+  </div>
+
+  <div id="page">
+    <!-- wraps the whole page -->
+    <div class="main-nav">
+      <span class="name">
+          <span class="studentname">
+            <input type="text" placeholder="What's Your Name?" id="txt_name" class = "txt_name"/>
+            <button>Enter</button>
+          </span>
+      </span>
+      <span class="nav">
+          <a href="#top">Home</a>
+          <a href="#body">Portfolio</a>
+          <a href="#bottom">Contact</a>
+        </span>
+    </div>
+
+    <header class=hwrapper>
+      <div class="hdiv1">
+        <img src="images/responsive-layout-profile.png" alt="profile picture" />
+      </div>
+      <div class="hdiv2">
+        <p>Hello,<span id ="person"></span>. There is so much that can be created through web-development. This is just some ideas to start from.</p>
+      </div>
+    </header>
+    <main class="body">
+      <h2 class="section-heading">Portfolio</h2>
+      <div class="card">
+        <img src="images/portfolio-1.png" alt="marketing page picture" />
+        <h2>Marketing Page</h2>
+        <div class="level Beginner">
+          Level Beginner
+        </div>
+        <p>This project shows the front page of a potential marketing website meant for a specific business.</p>
+        <div class="info">
+          <div class="Resources">
+            Resources:<br>
+            <br>
+            <br>
+            <a href="https://www.crazyegg.com/blog/landing-page-from-scratch/" target="_blank"> Crazyegg.com</a><br>
+            <br>
+            <a href="https://www.sitepoint.com/how-to-build-the-perfect-landing-page-a-step-by-step-guide/">Sitepoint.com</a>
+          </div>
+          <div class="Skills">
+            Skills:<br>
+            <br>
+            <ul>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-2.png" alt="search page picture" />
+        <h2>Search Page</h2>
+        <div class="level Advanced">
+          Level Advanced
+        </div>
+        <p>This project searches through a specific database to find information that the user is tryinf to look up.</p>
+        <div class="info">
+          <div class="Resources">
+            Resources:<br>
+            <br>
+            <br>
+            <a href="https://www.htmlgoodies.com/tutorials/getting_started/article.php/3456871/So-You-Want-Your-Own-Searchable-Database-Huh.htm" target="_blank"> htmlgoodies.com </a><br>
+            <br>
+            <a href="https://www.sitepoint.com/publishing-mysql-data-web/" target="_blank">Sitepoint.com</a>
+          </div>
+          <div class="Skills">
+            Skills:<br>
+            <br>
+            <ul>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>MySQL</li>
+              <li>PHP</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-3.png" alt="travel app picture" />
+        <h2>Travel App</h2>
+        <div class="level Advanced">
+          Level Advanced
+        </div>
+        <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+        <div class="info">
+          <div class="Resources">
+            Resources:<br>
+            <br>
+            <br>
+            <a href="https://thinkmobiles.com/blog/how-make-travel-app/" target="_blank">thinkmobiles.com </a><br>
+            <br>
+            <a href="https://medium.freecodecamp.org/how-to-develop-a-successful-travel-app-like-priceline-expedia-and-airbnb-9ac8c7d41cfc" target="_blank">freecodecamp.org</a>
+          </div>
+          <div class="Skills">
+            Skills:<br>
+            <br>
+            <ul>
+              <li>React.js</li>
+              <li>JavaScript</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-4.png" alt="map of favortite spots picture" />
+        <h2>Map of Favorite Spots</h2>
+        <div class="level Intermediate">
+          Level Intermediate
+        </div>
+        <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+        <div class="info">
+          <div class="Resources">
+            Resources:<br>
+            <br>
+            <br>
+            <a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank"> developers.google.com </a><br>
+            <br>
+            <a href="https://developers.google.com/maps/documentation/javascript/tutorial" target="_blank">developers.google.com</a>
+          </div>
+          <div class="Skills">
+            Skills:<br>
+            <br>
+            <ul>
+              <li>React.js</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-5.png" alt="photo Gallery picture" />
+        <h2>Photo Gallery</h2>
+        <div class="level Beginner">
+          Level Beginner
+        </div>
+        <p>This project shows pictures from a recent trip to the viwer and allows them to easily navigate through photos.</p>
+        <div class="info">
+          <div class="Resources">
+            Resources:<br>
+            <br>
+            <br>
+            <a href="https://www.taniarascia.com/how-to-build-a-responsive-image-gallery-with-flexbox/" target="_blank">taniarascia.com </a><br>
+            <br>
+            <a href="https://css-tricks.com/seamless-responsive-photo-grid/" target="_blank">fcss-tricks.com</a>
+          </div>
+          <div class="Skills">
+            Skills:<br>
+            <br>
+            <ul>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images/portfolio-6.png" alt="calculator picture" />
+        <h2>Calculator</h2>
+        <div class="level Intermediate">
+          Level Intermediate
+        </div>
+        <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+        <div class="info">
+          <div class="Resources">
+            Resources:<br>
+            <br>
+            <br>
+            <a href="https://medium.com/@ethanryan/lets-make-a-javascript-calculator-a81186cb912f" target="_blank">medium.com</a><br>
+            <br>
+            <a href="https://codeburst.io/making-a-calculator-with-basic-html-css-and-javascript-part-1-1e4288f0bea1" target="_blank">codeburst.io</a>
+          </div>
+          <div class="Skills">
+            Skills:<br>
+            <br>
+            <ul>
+              <li>Css</li>
+              <li>JavaScript</li>
+              <li>HTML</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>If you're interested in chatting or want more infomation about what I've been working on, I'd love hear from you!</p>
+      <div class="contact-txt">Phone
+        <span class="contact-info"> +(111) 555-1234</span>
+      </div>
+      <div class="contact-txt">Email
+        <span class="contact-info"> email@yoursite.com</span>
+      </div>
+    </div>
+    <footer class="bottom">
+      <div class="studentname">
+        <span>What's Your Name?</span>
+      </div>
+      <div class="btt">
+        <a href=#top>Back To Top</a>
+      </div>
+      <div class="main-nav-btt">
+        <div class="nav-btt-items">
+          <a href="#top">Home</a>
+        </div>
+        <div class="nav-btt-items">
+          <a href="#body">Portfolio</a>
+        </div>
+        <div class="nav-btt-items">
+          <a href="#bottom">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script/studentname.js"></script>
+
+</body>
+
+</html>
