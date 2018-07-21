@@ -26,13 +26,3 @@
     padding: 10px;
     font-size: 2em;
 }
-#message{
-  display: block;
-  background-color: black;
-  margin: 30% 20%;
-  width: 50%;
-  border: 3px solid #00FF70;
-  padding: 10px;
-  font-size: 2em;
-  display: none;
-}

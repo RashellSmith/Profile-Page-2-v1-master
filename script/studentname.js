@@ -1,6 +1,7 @@
-$(document).ready(function () {
+$(document).ready(function() {
   $("button").click(function() {
-    document.getElementById( 'person' ).innerHTML = document.getElementsByClassName( 'txt_name' ).value;
+    document.getElementById('person').innerHTML = document.getElementsByClassName('txt_name').value;
+    var studentname = $("#person").replaceWith($('#txt_name').val());
     var studentname = $(".studentname").replaceWith($('#txt_name').val());
 
     var page = document.getElementById("page");
@@ -14,25 +15,27 @@ $(document).ready(function () {
     $(page).addClass("hidepage");
     $(rocketBody).show();
     $(message).show();
-
-    setTimeout(function (){
+    $(countdown).hide();
+    setTimeout(function() {
       $(message).hide();
-
-    }, 1800);
-
-    clearInterval(timer);
-    countdownNumber = 10;
-    document.getElementById('countdown').innerHTML = countdownNumber;
-
-    timer = setInterval(function() {
-      countdownNumber = countdownNumber - 1;
+      $(countdown).show();
+      clearInterval(timer);
+      countdownNumber = 10;
       document.getElementById('countdown').innerHTML = countdownNumber;
-      if (countdownNumber <= 0) {
-        $(rocket).addClass("flying");
-        $(countdown).hide();
-      }
-    }, 700);
-    // $(f).addClass("flying");
+
+      timer = setInterval(function() {
+        countdownNumber = countdownNumber - 1;
+        document.getElementById('countdown').innerHTML = countdownNumber;
+        if (countdownNumber <= 0) {
+          $(rocket).addClass("flying");
+          $(countdown).hide();
+        }
+
+      }, 500);
+
+
+    }, 2500);
+
 
 
     setTimeout(function() {
@@ -41,21 +44,12 @@ $(document).ready(function () {
 
 
     }, 10000)
+    var skills = document.getElementsByClassName("skills")
+    $("skills").click(function() {
+      $(this).show("slide", {
+        direction: "left"
+      }, 1000);
+    });
   });
-  //   x.className === "all-elements")
-  //   { x.className += "hidepage";
-  // }
+
 });
-// var name = $(".name").text();
- // var messageName = $(".person").replaceWith($(".name").text());
-// const person = {$('#txt_name').val()}
-// const markup = `<span class="person"> ${person}</span>`;
-// document.getElementById('person').innerHTML = markup;
-// function myFunction() {
-//     var x = document.getElementById("m");
-//     if (x.className === "topnav") {
-//         x.className += " responsive";
-//     } else {
-//         x.className = "topnav";
-//     }
-// }
