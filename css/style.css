@@ -108,9 +108,9 @@ a:hover {
 
 .card {
   padding-top: 25px;
-  width: 85%;
+  width: 75%;
   align-content: center;
-  margin: 25px;
+  margin: 5px;
   position: relative;
 }
 
@@ -122,7 +122,6 @@ a:hover {
   margin: auto;
   width: 50%;
 }
-
 
 p {
   font-size: 1.3em;
@@ -178,23 +177,24 @@ footer {
 .info {
   display: inline-flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  max-width: 500px;
-  max-height: 500px;
+  width: 200px;
+  height: 350px;
   clear: both;
   overflow: hidden;
   margin: 0 auto;
+  border-radius: 15px;
 }
 
 .Skills {
   list-style-type: none;
   background-color: purple;
   color: white;
-  border-radius: 5px;
   padding: 10px;
   width: 200px;
   height: 150px;
+  justify-content: center;
+
 }
 
 .Resources {
@@ -202,6 +202,7 @@ footer {
   padding: 25px;
   width: 200px;
   height: 150px;
+
 }
 
 .Level, .Advanced {
@@ -215,7 +216,8 @@ footer {
 .Level, .Intermediate {
   color: #99CCCC;
 }
-#message{
+
+#message {
   display: block;
   background-color: black;
   margin: 30% 20%;
@@ -283,10 +285,10 @@ footer {
   .card {
     display: inline-block;
     width: 45%;
-    margin-right: -4px;
+    width: 38%;
     vertical-align: top;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
   }
   .card img {
     max-width: 100%;
@@ -300,7 +302,7 @@ footer {
   .btt {
     display: none;
   }
-  #message{
+  #message {
     display: block;
     background-color: black;
     margin: 30% 20%;
@@ -310,6 +312,44 @@ footer {
     font-size: 2em;
     display: none;
   }
+  .main-nav-btt {
+    min-width: 275px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .nav-btt-items {
+    font-size: 150%;
+    color: white;
+  }
+  .info {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 215px;
+    height: 300px;
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 15px;
+
+  }
+  .Skills {
+    list-style-type: none;
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    justify-content: center;
+  }
+
+  .Resources {
+    background: rgba(0, 0, 0, 0.6);
+    width: 500px;
+    height: 500px;
+  }
+
 }
 
 /*  large screens   */
@@ -379,20 +419,45 @@ footer {
     display: none;
   }
   .main-nav-btt {
+    min-width: 285px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
   .nav-btt-items {
     font-size: 150%;
     color: white;
   }
-  .info {
-    display: flex;
+
+.info {
+    display: inline-flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     max-width: 1000px;
     max-height: 700px;
-    ;
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 15px;
   }
+  .Skills {
+    list-style-type: none;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 500px;
+    max-height: 500px;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .Resources {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 15px;
+  }
+
 }

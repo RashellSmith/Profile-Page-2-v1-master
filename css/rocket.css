@@ -1,28 +1,24 @@
-
-
-#rocket{
+#rocket {
   position: absolute;
   left: 50%;
   bottom: 20px;
-  width:143px;
-  height:272px;
+  width: 143px;
+  height: 272px;
   margin-left: -71.5px;
   background: url("../images/giphy0.gif") no-repeat center center;
   transition: bottom 5000ms;
 }
 
-
-#rocket.flying{
-  bottom:1000px;
+#rocket.flying {
+  bottom: 1000px;
 }
 
-#countdown{
-
-    display: block;
-    background-color: black;
-    margin: 30% 20%;
-    width: 50%;
-    border: 3px solid #00FF70;
-    padding: 10px;
-    font-size: 2em;
+#countdown {
+  display: block;
+  background-color: black;
+  margin: 30% 20%;
+  width: 50%;
+  border: 3px solid #00FF70;
+  padding: 10px;
+  font-size: 2em;
 }
